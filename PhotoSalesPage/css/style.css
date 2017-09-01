@@ -2,6 +2,11 @@ body {
   padding-top: 50px;
 }
 
+/* add top - global setting for section tag - pad top and bottom 40 */
+section{
+	padding:40px 0 40px 0;
+} 
+
 .em-text{
 	color:#1caa98 !important;
 }
@@ -33,4 +38,46 @@ body {
 /* resize phone image to fit banner */
 .jumbotron img.showcase-img{
 	width:75%;
+}
+
+/* resize image to remain within it's parent div - set width to 100% */
+img.demo{
+	width:100%;
+	padding:3px;
+	border: 1px solid #ccc;
+}
+
+section#feature{
+	background:#1caa98;
+	color:#fff;
+	padding:40px;
+	overflow: auto;
+}
+
+section#feature ul li{
+	font-size: 22px;
+	list-style: none; /* no style such as bullets - can override with custom - https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type:  */
+	line-height: 2.0em;
+}
+
+footer{
+	background:#333;
+	color:#fff;
+	padding:30px 0 20px 0;
+}
+
+/* want the display nav bar in left  position of 6 col div  */
+footer li{
+	float:left;
+	padding:0 10px 0 10px;
+	list-style: none;
+}
+
+footer a {
+	color:#fff;
+}
+
+ /* want the display p text in right position of 6 col div  */
+footer p{
+	float:right;
 }
