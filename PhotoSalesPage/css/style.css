@@ -13,6 +13,8 @@ section{
 
 /* provides bottom for all views - needed for mobile so not stacked */
 .col-md-4{
+
+	margin-top:10px;	
 	margin-bottom:20px;
 }
 
@@ -101,7 +103,7 @@ footer p{
 
 /* MEDIA QUERIES */
 
-@media(min-width: 1200px){
+@media(max-width: 1200px){
 	.jumbotron img.showcase-img{
 		width:61%;
 		margin:5px 0 0 40px;
@@ -145,7 +147,6 @@ footer p{
 @media(max-width: 500px){
 	.jumbotron{
 		height:450px !important;
-		background-image:none;
 		text-align: center;
 	}
 
