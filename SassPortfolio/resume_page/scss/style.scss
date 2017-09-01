@@ -25,6 +25,7 @@ h2{
 	color:$primary-color;
 }
 
+/* Custom css for main container */
 .container-main{
 	background:#fff;
 	margin-top:80px;
@@ -65,22 +66,23 @@ header h1{
 .contact-list{
 	padding:0;
 	margin:0;
-}
 
-.contact-list li{
-	list-style:none;
-	font-weight:bold;
-	line-height:3.2em;
-}
+	li {
+		list-style:none;
+		font-weight:bold;
+		line-height:3.2em;
+	}
 
-.contact-list span{
-	display:block;
-	margin:0;
-	padding:0;
-	line-height:0.1em;
-	margin-left:37px;
-	font-size:15px;
-	color:#ccc;
+	span {
+		display:block;
+		margin:0;
+		padding:0;
+		line-height:0.1em;
+		margin-left:37px;
+		font-size:15px;
+		color:#ccc;
+	}
+
 }
 
 .media{
