@@ -126,6 +126,20 @@ content: ''; removes the white, i.e. squeezes the top and bottom together
 	overflow:auto; /* scroll bar if needed to view content */
 }
 
+ /* give a border and space out */
+.members .member-row{
+	border-bottom:1px solid #ccc;
+	padding-bottom:20px;
+	margin-bottom:20px;
+}
+
+ /* push down image */
+.members img{
+	margin-bottom:5px;
+	margin:auto !important;
+    display:block !important; /* center image over buttons */
+}
+
 footer{
 	background:#f4f4f4;
 	height:90px;
@@ -135,4 +149,11 @@ footer{
 	padding-top:40px;
 	margin-top:30px;
 	border-top:7px solid #04519b;
+}
+
+ /* if the buttons are on screen greater then 991 and the buttons are not stacking then push buttons down */
+@media(min-width: 991px){
+	.members p{
+		padding-top:40px;
+	}
 }
