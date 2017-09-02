@@ -17,5 +17,36 @@ header .logo{
 .panel-heading{
 	background-image: linear-gradient(#04519b, #044687 60%, #033769);
 	color:#fff !important;	/* add import since you are having to override Bootstraps predefinied CSS */
-
 }
+
+/* reduce size of comment avatar */
+.comment-avatar img{
+	width:40px;
+	margin-right:5px;
+}
+
+.friends li{
+	list-style: none;
+	padding:0 5px;
+	display:inline;	/* display photo and line on the same line */
+	float:left;	/* float image left */
+}
+
+/* reduce friends image size */
+.friends img{
+	width:55px;
+}
+
+.groups img{
+	width:80px;
+	float:left;
+	margin-right:15px;
+}
+
+.group-item{
+	padding-bottom:10px;
+	margin-bottom:20px;
+	border-bottom:1px solid #ccc; /* creates line under group item since many items per panel */
+	overflow:auto; /* scroll bar if needed to view content */
+}
+
