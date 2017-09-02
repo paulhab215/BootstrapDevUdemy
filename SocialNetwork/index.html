@@ -9,7 +9,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet"> <!-- now able to use the fontawesomes icons -->
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -18,13 +18,13 @@
       <div class="container">
         <img src="img/logo.png" class="logo">
         <form class="form-inline">
-          <div class="form-group">
+          <div class="form-group"><!-- Any group of form controls - The .form-group class is the easiest way to add some structure to forms. Its only purpose is to provide margin-bottom around a label and control pairing. As a bonus, since it’s a class you can use it with <fieldset>s, <div>s, or nearly any other element.-->
             <label class="sr-only" for="exampleInputEmail3">Email address</label>
             <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
           </div>
-          <div class="form-group">
+          <div class="form-group"><!-- Any group of form controls -->
             <label class="sr-only" for="exampleInputPassword3">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password"><!-- form-control is used by bootstrap to help control input of form - textual inputs (text, pass, date, month, number), select menus (multiple, size), and text area -->
           </div>
           <button type="submit" class="btn btn-default">Sign in</button><br>
           <div class="checkbox">
@@ -66,15 +66,15 @@
                 <h3 class="panel-title">Wall</h3>
               </div>
               <div class="panel-body">
-                <form>
+                <form><!-- bootstrap form -->
                   <div class="form-group">
-                    <textarea class="form-control" placeholder="Write on the wall"></textarea>
+                    <textarea class="form-control" placeholder="Write on the wall"></textarea><!-- text area for wall comment with placeholder -->
                   </div>
                 
                   <button type="submit" class="btn btn-default">Submit</button>
                   <div class="pull-right">
                     <div class="btn-group">
-                    <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Text</button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Text</button><!-- font awesome (http://fontawesome.io/) media upload buttons -->
                     <button type="button" class="btn btn-default"><i class="fa fa-file-image-o"></i> Image</button>
                     <button type="button" class="btn btn-default"> <i class="fa fa-file-video-o"></i> Video</button>
                   </div>
@@ -86,36 +86,36 @@
             <div class="panel panel-default post">
               <div class="panel-body">
                 <div class="row">
-                  <div class="col-sm-2">
+                  <div class="col-sm-2"><!-- thumbnail formats the picture to look smaller with a border and padding - https://getbootstrap.com/docs/3.3/components/#thumbnails -->
                     <a class="post-avatar thumbnail" href="profile.html"><img src="img/user.png"><div class="text-center">DevUser1</div></a>
                     <div class="likes text-center">7 Likes</div>
                   </div><!-- col-sm-2 end -->
                   <div class="col-sm-10">
                     <div class="bubble">
-                      <div class="pointer">
+                      <div class="pointer"><!-- represents arch -->
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget ante eget feugiat. Praesent adipiscing tortor eu tincidunt tempus. Sed convallis est in ante sodales, sit amet consectetur leo commodo. </p>
                       </div>
                       <div class="pointer-border"></div>
                     </div><!-- bubble end -->
+                    <!-- post-actions is out custom class-->
                     <p class="post-actions"><a href="#">Comment</a> - <a href="#">Like</a> - <a href="#">Follow</a> - <a href="#">Share</a> </p>
                     <div class="comment-form">
-                      <form class="form-inline">
-                        <div class="form-group">
+                      <form class="form-inline"><!-- form-inline - class to display a series of labels, form controls, and buttons on a single horizontal row-->
+                        <div class="form-group"><!-- Any group of form controls -->
                           <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Comment">
                         </div>
                         <button type="submit" class="btn btn-default">Add</button>
                       </form>
                     </div><!-- comment form end -->
-                    <div class="clearfix"></div>
-
+                    <div class="clearfix"></div><!-- clears all the floats from above -->
                     <div class="comments">
-                      <div class="comment">
+                      <div class="comment"><!-- pull-left - floats elemtn to left or right -->
                         <a class="comment-avatar pull-left" href="#"><img src="img/user.png"></a>
-                        <div class="comment-text">
+                        <div class="comment-text"><!-- comment-text - our custom class to assign css styling -->
                           <p>Sed convallis est in ante sodales, sit amet consectetur leo commodo.</p>
                         </div>
                       </div>
-                      <div class="clearfix"></div>
+                      <div class="clearfix"></div><!-- clears all the floats from above -->
                     </div>
                   </div>
                 </div>
