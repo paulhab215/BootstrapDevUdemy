@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Groups: Dobble Social Network</title>
+    <title>Profile: Dobble Social Network</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -49,9 +49,9 @@
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="members.html">Members</a></li>
-            <li class="active"><a href="groups.html">Groups</a></li>
+            <li><a href="groups.html">Groups</a></li>
             <li><a href="photos.html">Photos</a></li>
-            <li><a href="profile.html">Profile</a></li>
+            <li class="active"><a href="profile.html">Profile</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -61,38 +61,50 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-           <div class="groups">
-              <h1 class="page-header">Groups</h1>
-              <div class="group-item"><!-- list of divs for each one -->
-                <img src="img/group.png">
-                <h4><a href="#">Sample Group One</a></h4>
-                <p>This is a sample Dobble social network group</p>
-                <p><a href="#" class="btn btn-default">Join Group</a></p><!-- wrapping with paragraph makes spacing better -->
+           <div class="profile">
+              <h1 class="page-header">Paul Habjanetz</h1>
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="img/user.png" class="img-thumbnail">
+                </div>
+                <div class="col-md-8">
+                  <ul>
+                    <li><strong>Name:</strong> Paul Habjanetz</li>
+                    <li><strong>Email Address: </strong>paulhab39@gmail.com</li>
+                    <li><strong>City: </strong>Austin</li>
+                    <li><strong>State: </strong>Texas</li>
+                    <li><strong>Gender:</strong> Badass</li>
+                    <li><strong>Profession: </strong>Web Developer</li>
+                  </ul>
+                </div>
               </div>
-              <div class="group-item">
-                <img src="img/group.png">
-                <h4><a href="#">Sample Group Two</a></h4>
-                <p>This is a sample Dobble social network group</p>
-                <p><a href="#" class="btn btn-default">Join Group</a></p>
+              <br></br><!-- need to build new row so it is underneath -->
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Profile Wall</h3>
               </div>
-              <div class="clearfix"></div><!-- no affect but good habit -->
-              <div class="group-item">
-                <img src="img/group.png">
-                <h4><a href="#">Sample Group Three</a></h4>
-                <p>This is a sample Dobble social network group</p>
-                <p><a href="#" class="btn btn-default">Join Group</a></p>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <textarea class="form-control" placeholder="Write on the wall"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                  <div class="pull-right">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Text</button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-file-image-o"></i> Image</button>
+                    <button type="button" class="btn btn-default"> <i class="fa fa-file-video-o"></i> Video</button>
+                  </div>
+                  </div>
+                </form>        
               </div>
-              <div class="clearfix"></div>
-              <div class="group-item">
-                <img src="img/group.png">
-                <h4><a href="#">Sample Group Four</a></h4>
-                <p>This is a sample Dobble social network group</p>
-                <p><a href="#" class="btn btn-default">Join Group</a></p>
+            </div>
+                </div>
               </div>
-              <div class="clearfix"></div>
             </div>
           </div><!-- col-md-8 end -->
-
           <div class="col-md-4">
             <div class="panel panel-default friends"><!-- custom styling element friends -->
               <div class="panel-heading">
