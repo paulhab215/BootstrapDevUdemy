@@ -140,6 +140,23 @@ content: ''; removes the white, i.e. squeezes the top and bottom together
     display:block !important; /* center image over buttons */
 }
 
+.photos{
+	margin:0;
+	padding:0;
+}
+
+.photos li{
+	list-style: none;
+	float:left;
+	margin:5px;
+	width:23%;  /* gives 4 images per frow */
+}
+
+.photos img{
+	width:100%;
+}
+
+
 footer{
 	background:#f4f4f4;
 	height:90px;
