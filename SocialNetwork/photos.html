@@ -64,13 +64,17 @@
           <div class="col-md-8">
             <h1 class="page-header">Photos</h1><!-- modal plugin -->
             <ul class="photos gallery-parent"><!-- build ul list for plugin photo gallery - need ot have a class of gallery-parent for the plugin - our custom class photos -->
-              <li><a href="img/sample1.jpg" data-title="Image One" data-footer="This is image 1" data-toggle="lightbox" data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image one"><img src="img/sample1.jpg" class="img-thumbnail"></a></li><!-- img-thumbnail gives border -->
-              <li><a href="img/sample2.jpg" data-title="Image Two" data-footer="This is image 2" data-toggle="lightbox"  data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image two"><img src="img/sample2.jpg" class="img-thumbnail"></a></li>
+              <li><a href="img/sample1.jpg" data-title="Image One" data-footer="This is image 1" data-toggle="lightbox" data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="This is image one"><img src="img/sample1.jpg" class="img-thumbnail"></a></li><!-- img-thumbnail gives border -->
+              <li><a href="img/sample2.jpg" data-title="Image Two" data-footer="This is image 2" data-toggle="lightbox"  data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="This is image two"><img src="img/sample2.jpg" class="img-thumbnail"></a></li>
               <!-- modal plugin -->
-              <li><a href="img/sample3.jpg" data-title="Image Three" data-footer="This is image 3" data-toggle="lightbox"  data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image three"><img src="img/sample3.jpg" class="img-thumbnail"></a></li>
-              <li><a href="img/sample4.jpg" data-title="Image Four" data-footer="This is image 4" data-toggle="lightbox"  data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image four"><img src="img/sample4.jpg" class="img-thumbnail"></a></li>
-              <li><a href="img/sample5.jpg" data-title="Image Five" data-footer="This is image 5" data-toggle="lightbox"  data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image five"><img src="img/sample5.jpg" class="img-thumbnail"></a></li>
-              <li><a href="img/sample6.jpg" data-title="Image Six" data-footer="This is image 6" data-toggle="lightbox"  data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image six"><img src="img/sample6.jpg" class="img-thumbnail"></a></li>
+              <li><a href="img/sample3.jpg" data-title="Image Three" data-footer="This is image 3" data-toggle="lightbox"  data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="This is image three"><img src="img/sample3.jpg" class="img-thumbnail"></a></li>
+              <!-- adhere picture to the link - using data-toggle/data-title/data-footer will allow the specification for custom data attributes states that any attribute that starts with “data-” will be treated as a storage area for private data -->
+              <!-- https://www.w3schools.com/tags/att_global_data.asp -->
+              <li><a href="img/sample4.jpg" data-title="Image Four" data-footer="This is image 4" data-toggle="lightbox"  data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="This is image four"><img src="img/sample4.jpg" class="img-thumbnail"></a></li>
+              <!-- data-gallery="mygallery" - For grouping elements of a gallery  -->
+              <!-- data-hover="tooltip" - used for hover overs when on pic -shows what is is in title  -->
+              <li><a href="img/sample5.jpg" data-title="Image Five" data-footer="This is image 5" data-toggle="lightbox"  data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="This is image five"><img src="img/sample5.jpg" class="img-thumbnail"></a></li>
+              <li><a href="img/sample6.jpg" data-title="Image Six" data-footer="This is image 6" data-toggle="lightbox"  data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="This is image six"><img src="img/sample6.jpg" class="img-thumbnail"></a></li>
             </ul>
           </div><!-- col-md-8 end -->
 
@@ -150,7 +154,7 @@
     $(this).ekkoLightbox();
 }); 
       $(function () {
-  $('[data-hover="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip()
 })
     </script>
 
